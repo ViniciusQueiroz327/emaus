@@ -1,0 +1,125 @@
+.container {
+  background:
+    linear-gradient(
+      180deg,
+      #2b0000,
+      #540018
+    );
+
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.55));
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+
+.overlay h1 {
+  font-size: clamp(
+    3rem,
+    8vw,
+    6rem
+  );
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-top: 16px;
+}
+
+.gallery {
+  padding: 100px 0;
+}
+
+.final {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.final h2 {
+  font-size: clamp(
+    2rem,
+    6vw,
+    4rem
+  );
+}
+
+.hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  bottom: -100px;
+  opacity: 0.5;
+  animation: floatHeart linear infinite;
+}
+
+.heart:nth-child(odd) {
+  left: 20%;
+}
+
+.heart:nth-child(even) {
+  left: 80%;
+}
+
+@keyframes floatHeart {
+  from {
+    transform: translateY(110vh);
+  }
+
+  to {
+    transform: translateY(-120vh);
+  }
+}
+
+.secretButton {
+  margin-top: 30px;
+
+  padding: 14px 24px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff4d6d,
+      #c9184a
+    );
+
+  transition: .3s;
+}
+
+.secretButton:hover {
+  transform: scale(1.05);
+}

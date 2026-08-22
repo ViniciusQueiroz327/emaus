@@ -1,0 +1,67 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(8px);
+}
+
+.modal {
+  width: 90%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 24px;
+  text-align: center;
+  color: white;
+  background: rgba(80, 0, 30, 0.5); 
+  border: 1px solid rgba(255,255,255,.15);
+  backdrop-filter: blur(18px);
+}
+
+.modal h2 {
+  font-size: 3rem;
+}
+
+.modal h3 {
+  margin-top: 10px;
+}
+
+.modal p {
+  margin-top: 8px;
+  opacity: .8;
+}
+
+.modal input {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.cancel {
+  background: rgba(255,255,255,.15);
+  color: white;
+}
+
+.confirm {
+  background: #ff4d6d;
+  color: white;
+}

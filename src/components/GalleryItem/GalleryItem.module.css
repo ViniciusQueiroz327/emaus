@@ -1,0 +1,60 @@
+.container {
+  width: min(650px, 90%);
+
+  margin: 90px auto;
+
+  text-align: center;
+}
+
+.polaroid {
+  background: white;
+
+  padding: 15px 15px 60px;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.35);
+}
+
+.polaroid img {
+  width: 100%;
+
+  display: block;
+
+  border-radius: 4px;
+}
+
+.film {
+  padding: 12px;
+
+  border-radius: 12px;
+
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #111 0,
+      #111 12px,
+      #222 12px,
+      #222 18px
+    );
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.35);
+}
+
+.film video {
+  width: 100%;
+
+  display: block;
+
+  border-radius: 6px;
+}
+
+.container p {
+  margin-top: 18px;
+
+  color: rgba(255,255,255,.85);
+
+  font-size: 1rem;
+}
