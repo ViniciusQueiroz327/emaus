@@ -1,16 +1,17 @@
 import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
-import Members from "../../components/Members/Members";
-import BibleVerse from "../../components/BibleVerse/BibleVerse";
-import "./Home.css";
+import Leadership from "../../components/Leadership/Leadership";
+
+import "./Emaus.css";
 
 function Emaus() {
   return (
-    <main className="home">
+    <main className="emaus">
       <Hero />
+
       <About />
-      <Members />
-      <BibleVerse />
+
+      <Leadership />
     </main>
   );
 }
