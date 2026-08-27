@@ -1,4 +1,5 @@
 .emaus {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   background-color: var(--page-primary);
@@ -7,6 +8,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
 
-  color: var(--color-font);
+.emaus::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.123);
+  pointer-events: none;
+}
+
+.emaus > * {
+  position: relative;
+  z-index: 1;
 }
