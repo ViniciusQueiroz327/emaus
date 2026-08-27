@@ -1,8 +1,18 @@
-export const cells = [
+export interface Cell {
+  id: string;
+  name: string;
+  path: string;
+  colors: {
+    primary: string;
+    secondary: string;
+  };
+  image: string;
+}
+
+export const cells: Cell[] = [
   {
     id: "kadosh",
     name: "KADOSH",
-    theme: "Santidade",
     path: "/kadosh",
 
     colors: {
@@ -10,20 +20,19 @@ export const cells = [
       secondary: "#195291",
     },
 
-    image: "/imgs/cells/kadosh.jpg",
+    image: "/imgs/kadosh/arts/Kadosh_no_bg.png",
   },
 
   {
-    id: "nova-celula",
-    name: "NOVA CÉLULA",
-    theme: "Tema da célula",
-    path: "/nova-celula",
+    id: "ekballo",
+    name: "EKBALLO",
+    path: "/ekballo",
 
     colors: {
       primary: "#...",
       secondary: "#...",
     },
 
-    image: "/imgs/cells/nova-celula.jpg",
+    image: "/imgs/ekballo/arts/Ekballo_no_bg.png",
   },
 ];
