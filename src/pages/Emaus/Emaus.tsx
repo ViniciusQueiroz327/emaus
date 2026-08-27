@@ -8,7 +8,11 @@ import "./Emaus.css";
 function Emaus() {
   return (
     <main className="emaus">
-      <Hero />
+      <Hero
+        logo="/imgs/emaus/arts/Emaus_no_bg.png"
+        secondaryLogo="/imgs/emaus/arts/E_Emaus_no_bg.png"
+        alt="Emaús"
+      />
       <About />
       <Leadership />
       <CellsCarousel />

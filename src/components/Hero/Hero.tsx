@@ -1,12 +1,28 @@
 import "./Hero.css";
 
-function Hero() {
+interface HeroProps {
+  logo: string;
+  secondaryLogo: string;
+  alt?: string;
+}
+
+function Hero({
+  logo,
+  secondaryLogo,
+  alt = "Logo",
+}: HeroProps) {
   const scrollToAbout = () => {
+    const about = document.getElementById("about");
+
+    if (!about) return;
+
     const start = window.scrollY;
-    const target = window.innerHeight;
+    const target =
+      about.getBoundingClientRect().top + window.scrollY;
+
     const distance = target - start;
 
-    const duration = 100;
+    const duration = 800;
     let startTime: number | null = null;
 
     const easeInOutQuart = (t: number) => {
@@ -25,7 +41,10 @@ function Hero() {
 
       const easedProgress = easeInOutQuart(progress);
 
-      window.scrollTo(0, start + distance * easedProgress);
+      window.scrollTo(
+        0,
+        start + distance * easedProgress
+      );
 
       if (progress < 1) {
         requestAnimationFrame(animateScroll);
@@ -40,21 +59,21 @@ function Hero() {
       <div className="hero__container">
         <img
           className="hero__logo"
-          src="/imgs/logo/Kadosh_no_bg.png"
-          alt="KADOSH"
+          src={logo}
+          alt={alt}
         />
 
         <img
           className="k_kadosh__logo"
-          src="/imgs/logo/K_Kadosh_no_bg.png"
-          alt="KADOSH"
+          src={secondaryLogo}
+          alt={alt}
         />
       </div>
 
       <button
         className="hero__scroll-indicator"
         onClick={scrollToAbout}
-        aria-label="Ir para a seção Sobre Nós"
+        aria-label="Ir para a seção About"
       >
         <span className="hero__scroll-arrow"></span>
       </button>

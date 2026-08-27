@@ -7,7 +7,11 @@ import BibleVerse from "../../components/BibleVerse/BibleVerse";
 function Kadosh() {
   return (
     <main className="home">
-      <Hero />
+      <Hero
+        logo="/imgs/kadosh/arts/Kadosh_no_bg.png"
+        secondaryLogo="/imgs/kadosh/arts/K_Kadosh_no_bg.png"
+        alt="Kadosh"
+      />
       <About />
       <Members />
       <BibleVerse />
