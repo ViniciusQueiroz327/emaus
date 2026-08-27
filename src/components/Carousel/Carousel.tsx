@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { gallery } from "../../../data/gallery";
+import { gallery } from "../../data/Kadosh/KadoshGallery";
 
 import "./Carousel.css";
 

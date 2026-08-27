@@ -1,5 +1,5 @@
 import "./About.css";
-import Carousel from "./Carousel/Carousel";
+import Carousel from "../Carousel/Carousel";
 
 function About() {
   return (

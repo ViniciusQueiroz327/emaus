@@ -1,4 +1,4 @@
-import { members } from "../../data/members";
+import { members } from "../../data/Kadosh/KadoshTeam";
 
 import MemberCard from "./MemberCard";
 

@@ -4,7 +4,7 @@ import Members from "../../components/Members/Members";
 import BibleVerse from "../../components/BibleVerse/BibleVerse";
 import "./Home.css";
 
-function Home() {
+function Kadosh() {
   return (
     <main className="home">
       <Hero />
@@ -15,4 +15,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Kadosh;
