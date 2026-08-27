@@ -1,4 +1,10 @@
 export const emaus = {
+  theme: {
+    primary: "rgb(160, 204, 141)",
+    secondary: "rgba(160, 204, 141, 0.68)",
+    background: "/imgs/emaus/arts/Emaus_bg.jpeg",
+  },
+  
   hero: {
     logo: "/imgs/emaus/arts/Emaus_no_bg.png",
     secondaryLogo: "/imgs/emaus/arts/K_Emaus_no_bg.png",

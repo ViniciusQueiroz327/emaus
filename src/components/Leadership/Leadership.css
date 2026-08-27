@@ -3,7 +3,7 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 0;
-  background-color: var(--color-primary);
+  background-color: var(--page-primary);
   border-radius: 32px;
 }
 

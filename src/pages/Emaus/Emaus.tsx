@@ -8,7 +8,14 @@ import "./Emaus.css";
 
 function Emaus() {
   return (
-    <main className="emaus">
+    <main
+      className="emaus"
+      style={{
+        "--page-primary": emaus.theme.primary,
+        "--page-secondary": emaus.theme.secondary,
+        "--page-background": `url("${emaus.theme.background}")`,
+      } as React.CSSProperties}
+    >
       <Hero
         logo={emaus.hero.logo}
         secondaryLogo={emaus.hero.secondaryLogo}

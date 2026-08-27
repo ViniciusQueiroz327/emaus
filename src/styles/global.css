@@ -11,16 +11,8 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-
-  background-color: var(--color-primary);
+  background-color: #000;
   color: var(--color-font);
-
-  background-image: url("/imgs/logo/background.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
