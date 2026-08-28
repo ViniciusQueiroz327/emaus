@@ -1,7 +1,8 @@
 import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
-import Members from "../../components/Members/Members";
+import Team from "../../components/Team/Team";
 import BibleVerse from "../../components/BibleVerse/BibleVerse";
+import { team } from "../../data/Kadosh/KadoshTeam";
 
 import { cells } from "../../data/cells";
 
@@ -33,7 +34,7 @@ function Kadosh() {
         text={kadosh.about.text}
         images={kadosh.about.images}
       />
-      <Members />
+      <Team team={team} />
       <BibleVerse />
     </main>
   );

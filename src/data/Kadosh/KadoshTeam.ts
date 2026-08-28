@@ -1,56 +1,63 @@
-export const members = [
+export interface Team {
+  name: string;
+  role: string;
+  image: string;
+  position?: string;
+}
+
+export const team = [
   {
     name: "Beatriz (Bibia)",
     role: "Líder",
-    image: "/imgs/membros/Bibis.jpeg",
+    image: "/imgs/kadosh/team/Bibis.jpeg",
     position: "center",
   },
   {
     name: "Mariana (Crocs)",
     role: "Líder em Treinamento",
-    image: "/imgs/membros/Crocs.jpeg",
+    image: "/imgs/kadosh/team/Crocs.jpeg",
     position: "center",
   },
   {
     name: "Marília (Mari)",
     role: "Líder em Treinamento",
-    image: "/imgs/membros/Mari.jpeg",
+    image: "/imgs/kadosh/team/Mari.jpeg",
     position: "center",
   },
   {
     name: "Laura (Lau)",
     role: "Anjo da Guarda",
-    image: "/imgs/membros/Laura.jpeg",
+    image: "/imgs/kadosh/team/Laura.jpeg",
     position: "center",
   },
   {
     name: "Raíssa (Rai)",
     role: "Anjo da Guarda",
-    image: "/imgs/membros/Rai.jpeg",
+    image: "/imgs/kadosh/team/Rai.jpeg",
     position: "center 10%",
   },
   {
-    name: "Raphaela (Rafa)",
+    name: "Raphaela (Rapha)",
     role: "Anjo da Guarda",
-    image: "/imgs/membros/Rapha.jpeg",
+    image: "/imgs/kadosh/team/Rapha.jpeg",
     position: "center",
   },
   {
     name: "Paola (Pa)",
     role: "Anjo da Guarda",
-    image: "/imgs/membros/Paola.jpeg",
+    image: "/imgs/kadosh/team/Paola.jpeg",
     position: "center 50% 80%",
   },
   {
     name: "Vinicius (Vini)",
     role: "Anjo da Guarda",
-    image: "/imgs/membros/Vinicius.jpeg",
+    image: "/imgs/kadosh/team/Vinicius.jpeg",
     position: "center",
   },
   {
     name: "Ricardo",
     role: "Menção Honrosa (Esposo da Líder!!!)",
-    image: "/imgs/membros/Ricardo.jpeg",
+    image: "/imgs/kadosh/team/Ricardo.jpeg",
     position: "center 60%",
   },
 ];

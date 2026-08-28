@@ -1,4 +1,4 @@
-export const members = [
+export const team = [
   {
     name: "Beatriz (Bibia)",
     role: "Líder",
