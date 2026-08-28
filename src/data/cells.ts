@@ -5,6 +5,7 @@ export interface Cell {
   colors: {
     primary: string;
     secondary: string;
+    background: string;
   };
   hero: {
     logo: string;
@@ -26,6 +27,7 @@ export const cells: Cell[] = [
     colors: {
       primary: "rgba(7, 43, 95, 1)",
       secondary: "#195291",
+      background: "/imgs/kadosh/arts/background.jpeg",
     },
     hero: {
       logo: "/imgs/kadosh/arts/Kadosh_no_bg.png",
@@ -49,8 +51,12 @@ export const cells: Cell[] = [
         Uma família que deseja conhecer Jesus, torná-Lo conhecido e viver tudo aquilo que Ele sonhou para nós.
       `,
       images: [
-        "/imgs/kadosh/...",
-        "/imgs/kadosh/...",
+        "/imgs/kadosh/group/group_1.jpeg",
+        "/imgs/kadosh/group/group_2.jpeg",
+        "/imgs/kadosh/group/group_3.jpeg",
+        "/imgs/kadosh/group/group_4.jpeg",
+        "/imgs/kadosh/group/group_5.jpeg",
+        "/imgs/kadosh/group/group_6.jpeg",
       ],
     },
     image: "/imgs/kadosh/arts/Kadosh_no_bg.png",
@@ -63,6 +69,7 @@ export const cells: Cell[] = [
     colors: {
       primary: "#...",
       secondary: "#...",
+      background: "/imgs/ekballo",
     },
     hero: {
       logo: "/imgs/ekballo/arts/Ekballo_no_bg.png",

@@ -1,6 +1,5 @@
-import Carousel from "../Carousel/Carousel";
-
 import "./About.css";
+import Carousel from "../Carousel/Carousel";
 
 interface AboutProps {
   title: string;
