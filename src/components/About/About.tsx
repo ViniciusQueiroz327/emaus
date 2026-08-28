@@ -1,5 +1,6 @@
-import "./About.css";
 import Carousel from "../Carousel/Carousel";
+
+import "./About.css";
 
 interface AboutProps {
   title: string;
@@ -7,30 +8,29 @@ interface AboutProps {
   images: string[];
 }
 
-function About() {
+function About({
+  title,
+  text,
+  images,
+}: AboutProps) {
   return (
     <section className="about" id="about">
       <div className="about__container">
+
         <div className="about__content">
           <h2 className="about__title">
-            
+            {title}
           </h2>
+
           <p className="about__text">
-            
-          </p>
-          <p className="about__text">
-            
-          </p>
-          <p className="about__text">
-            
-          </p>
-          <p className="about__text">
-            
+            {text}
           </p>
         </div>
+
         <div className="about__gallery">
-          <Carousel />
+          <Carousel images={images} />
         </div>
+
       </div>
     </section>
   );

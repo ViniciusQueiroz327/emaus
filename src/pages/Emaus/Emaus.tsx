@@ -23,7 +23,11 @@ function Emaus() {
         secondaryLogo={emaus.hero.secondaryLogo}
         alt="Emaús"
       />
-      <About />
+      <About
+        title={emaus.about.title}
+        text={emaus.about.text}
+        images={emaus.about.images}
+      />
       <Leadership />
       <CellsCarousel />
     </main>
