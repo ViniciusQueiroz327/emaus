@@ -35,7 +35,10 @@ function Kadosh() {
         images={kadosh.about.images}
       />
       <Team team={team} />
-      <BibleVerse />
+      <BibleVerse
+        text={kadosh.bibleVerse.text}
+        reference={kadosh.bibleVerse.reference}
+      />
     </main>
   );
 }

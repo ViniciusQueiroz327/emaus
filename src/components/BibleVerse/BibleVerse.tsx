@@ -1,31 +1,30 @@
 import "./BibleVerse.css";
 
-function BibleVerse() {
+interface BibleVerseProps {
+  text: string;
+  reference: string;
+}
+
+function BibleVerse({
+  text,
+  reference,
+}: BibleVerseProps) {
   return (
     <section className="bible-verse">
       <div className="bible-verse__container">
-        <div className="bible-verse__content">
-          <span className="bible-verse__subtitle">
-            NOSSA INSPIRAÇÃO
-          </span>
+        
+        <span className="bible-verse__subtitle">
+          NOSSA INSPIRAÇÃO
+        </span>
 
-          <blockquote className="bible-verse__text">
-            "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito,
-            para que todo o que nele crê não pereça, mas tenha a vida eterna"
-          </blockquote>
+        <blockquote className="bible-verse__text">
+          "{text}"
+        </blockquote>
 
-          <span className="bible-verse__reference">
-            João 3:16
-          </span>
-        </div>
+        <span className="bible-verse__reference">
+          {reference}
+        </span>
 
-        <div className="bible-verse__image">
-            <img
-                className="hero__logo"
-                src="/imgs/bible_verse/cruz_1.png"
-                alt="KADOSH"
-            />
-        </div>
       </div>
     </section>
   );

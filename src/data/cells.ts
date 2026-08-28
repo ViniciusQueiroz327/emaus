@@ -16,6 +16,10 @@ export interface Cell {
     text: string;
     images: string[];
   };
+  bibleVerse: {
+    text: string;
+    reference: string;
+  }
   image: string;
 }
 
@@ -59,29 +63,37 @@ export const cells: Cell[] = [
         "/imgs/kadosh/group/group_6.jpeg",
       ],
     },
+    bibleVerse: {
+      text: "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo o que nele crê não pereça, mas tenha a vida eterna",
+      reference: "João 3:16",
+    },
     image: "/imgs/kadosh/arts/Kadosh_no_bg.png",
   },
 
-  {
-    id: "ekballo",
-    name: "EKBALLO",
-    path: "/ekballo",
-    colors: {
-      primary: "#...",
-      secondary: "#...",
-      background: "/imgs/ekballo",
-    },
-    hero: {
-      logo: "/imgs/ekballo/arts/Ekballo_no_bg.png",
-      secondaryLogo: "/imgs/ekballo/arts/K_Ekballo_no_bg.png",
-    },
-    about: {
-      title: "EKBALLO",
-      text: `
+  // {
+  //   id: "ekballo",
+  //   name: "EKBALLO",
+  //   path: "/ekballo",
+  //   colors: {
+  //     primary: "#...",
+  //     secondary: "#...",
+  //     background: "/imgs/ekballo",
+  //   },
+  //   hero: {
+  //     logo: "/imgs/ekballo/arts/Ekballo_no_bg.png",
+  //     secondaryLogo: "/imgs/ekballo/arts/K_Ekballo_no_bg.png",
+  //   },
+  //   about: {
+  //     title: "EKBALLO",
+  //     text: `
         
-      `,
-      images: [],
-    },
-    image: "/imgs/ekballo/arts/Ekballo_no_bg.png",
-  },
+  //     `,
+  //     images: [],
+  //   },
+  //   bibleVerse: {
+  //     text: "XXXX",
+  //     reference: "XXX 1:1",
+  //   },
+  //   image: "/imgs/ekballo/arts/Ekballo_no_bg.png",
+  // },
 ];
