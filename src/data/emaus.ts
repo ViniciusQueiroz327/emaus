@@ -7,7 +7,7 @@ export const emaus = {
   
   hero: {
     logo: "/imgs/emaus/arts/Emaus_no_bg.png",
-    secondaryLogo: "/imgs/emaus/arts/K_Emaus_no_bg.png",
+    secondaryLogo: "/imgs/emaus/arts/E_Emaus_no_bg.png",
   },
 
   about: {
