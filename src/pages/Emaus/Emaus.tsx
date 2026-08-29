@@ -13,6 +13,7 @@ function Emaus() {
       style={
         {
           "--page-primary": emaus.theme.primary,
+          "--page-primaryTransparent": emaus.theme.primaryTransparent,
           "--page-secondary": emaus.theme.secondary,
           "--page-background": `url("${emaus.theme.background}")`,
         } as CSSProperties

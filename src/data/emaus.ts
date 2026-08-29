@@ -1,6 +1,7 @@
 export const emaus = {
   theme: {
     primary: "rgb(160, 204, 141)",
+    primaryTransparent: "rgb(160, 204, 141, 0.3)",
     secondary: "rgba(160, 204, 141, 0.68)",
     background: "/imgs/emaus/arts/Emaus_bg.jpeg",
   },

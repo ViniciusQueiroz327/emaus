@@ -1,9 +1,10 @@
 .leadership {
-  /* width: calc(100% - 48px); */
+  width: calc(100% - 48px);
   max-width: 1800px;
   margin: 0 auto;
   padding: 80px 0;
-  background-color: var(--page-primary);
+  /* background-color: var(--page-primary); */
+  background-color: var(--page-primaryTransparent);
   border-radius: 32px;
 }
 
@@ -46,7 +47,7 @@
   gap: 24px;
   padding: 16px;
   border-radius: 20px;
-  background-color: rgba(253, 253, 253, 0.15);
+  background-color: rgba(253, 253, 253, 0.089);
   transition:
     transform var(--transition-normal),
     background-color var(--transition-normal);
