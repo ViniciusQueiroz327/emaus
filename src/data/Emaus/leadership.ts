@@ -22,7 +22,7 @@ export const leadership: LeadershipMember[] = [
     name: "Priscila Vilar",
     role: "Discipuladora",
     image: "/imgs/emaus/team/PriscilaVilar.jpeg",
-    position: "center",
+    position: "center 25%",
   },
   {
     name: "Beatriz Gomes",

@@ -26,6 +26,9 @@ function Leadership() {
                 className="leadership__image"
                 src={person.image}
                 alt={person.name}
+                style={{
+                  objectPosition: person.position ?? "center",
+                }}
               />
 
               <div className="leadership__info">

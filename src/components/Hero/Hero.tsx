@@ -2,13 +2,11 @@ import "./Hero.css";
 
 interface HeroProps {
   logo: string;
-  secondaryLogo: string;
   alt?: string;
 }
 
 function Hero({
   logo,
-  secondaryLogo,
   alt = "Logo",
 }: HeroProps) {
   const scrollToAbout = () => {
@@ -60,12 +58,6 @@ function Hero({
         <img
           className="hero__logo"
           src={logo}
-          alt={alt}
-        />
-
-        <img
-          className="k_kadosh__logo"
-          src={secondaryLogo}
           alt={alt}
         />
       </div>

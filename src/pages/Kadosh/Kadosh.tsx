@@ -3,10 +3,9 @@ import About from "../../components/About/About";
 import Team from "../../components/Team/Team";
 import BibleVerse from "../../components/BibleVerse/BibleVerse";
 import { team } from "../../data/Kadosh/KadoshTeam";
-
 import { cells } from "../../data/cells";
-
 import "./Kadosh.css";
+import PageLogo from "../../components/PageLogo/PageLogo";
 
 function Kadosh() {
   const kadosh = cells.find((cell) => cell.id === "kadosh");
@@ -24,9 +23,12 @@ function Kadosh() {
         "--page-background": `url("${kadosh.colors.background}")`,
       } as React.CSSProperties}
     >
+      <PageLogo
+        src={kadosh.hero.secondaryLogo}
+        alt="Emaús"
+      />
       <Hero
         logo={kadosh.hero.logo}
-        secondaryLogo={kadosh.hero.secondaryLogo}
         alt={kadosh.name}
       />
       <About
