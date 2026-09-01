@@ -13,9 +13,15 @@ export const leadership: LeadershipMember[] = [
     position: "center",
   },
   {
-    name: "Gabriel",
+    name: "Gabriel Machado",
     role: "Obreiro",
-    image: "/imgs/emaus/team/Gabriel.jpeg",
+    image: "/imgs/emaus/team/GabrielMachado.jpeg",
+    position: "center",
+  },
+  {
+    name: "Gabriela Camargo",
+    role: "Obreira",
+    image: "/imgs/emaus/team/GabrielaCamargo.jpeg",
     position: "center",
   },
   {
