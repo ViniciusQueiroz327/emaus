@@ -17,7 +17,9 @@
 
 @media (max-width: 600px) {
   .page-logo {
-    width: 30px;
+    top: 20px;
+    left: 20px;
+    width: 40px;
     height: auto;
   }
 }
