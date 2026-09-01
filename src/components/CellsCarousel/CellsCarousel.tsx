@@ -54,6 +54,10 @@ function CellsCarousel() {
               {currentCell.name}
             </h3>
 
+            <span className="cells-carousel__location">
+              {currentCell.location}
+            </span>
+
             <Link
               to={currentCell.path}
               className="cells-carousel__button"

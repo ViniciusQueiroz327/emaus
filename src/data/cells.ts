@@ -2,6 +2,7 @@ export interface Cell {
   id: string;
   name: string;
   path: string;
+  location: string;
   colors: {
     primary: string;
     secondary: string;
@@ -28,6 +29,7 @@ export const cells: Cell[] = [
     id: "kadosh",
     name: "KADOSH",
     path: "/kadosh",
+    location: "Vila Sônia",
     colors: {
       primary: "rgba(7, 43, 95, 1)",
       secondary: "#195291",
@@ -74,6 +76,7 @@ export const cells: Cell[] = [
   //   id: "ekballo",
   //   name: "EKBALLO",
   //   path: "/ekballo",
+  //   location: "Desconhecido",
   //   colors: {
   //     primary: "#...",
   //     secondary: "#...",
