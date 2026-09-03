@@ -1,11 +1,13 @@
 import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
-import Team from "../../components/Team/Team";
 import BibleVerse from "../../components/BibleVerse/BibleVerse";
-import { team } from "../../data/Kadosh/KadoshTeam";
 import { cells } from "../../data/cells";
 import "./Kadosh.css";
 import PageLogo from "../../components/PageLogo/PageLogo";
+import Team from "../../components/Team/Team";
+import { team } from "../../data/Kadosh/KadoshTeam";
+import Members from "../../components/Members/Members";
+import { members } from "../../data/Kadosh/KadoshMembers";
 
 function Kadosh() {
   const kadosh = cells.find((cell) => cell.id === "kadosh");
@@ -37,6 +39,7 @@ function Kadosh() {
         images={kadosh.about.images}
       />
       <Team team={team} />
+      <Members members={members} />
       <BibleVerse
         text={kadosh.bibleVerse.text}
         reference={kadosh.bibleVerse.reference}
