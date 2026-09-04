@@ -27,7 +27,7 @@ export const members = [
   {
     name: "Letícia (Lele)",
     role: "Membro",
-    image: "/imgs/kadosh/members/Lele_1.jpeg",
-    position: "center",
+    image: "/imgs/kadosh/members/Lele_2.jpeg",
+    position: "center 0%",
   },
 ];

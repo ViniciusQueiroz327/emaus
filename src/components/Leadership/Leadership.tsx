@@ -35,9 +35,11 @@ function Leadership() {
                 <h3 className="leadership__name">
                   {person.name}
                 </h3>
-
                 <span className="leadership__role">
                   {person.role}
+                </span>
+                <span className="leadership__instagram_infos">
+                  <a href={person.instagramLink}>{person.instagramName}</a>
                 </span>
               </div>
             </article>

@@ -40,7 +40,7 @@
 
 
 /* CARDS */
-.members-card {
+.member-card {
   position: relative;
   width: calc((100% - 72px) / 4);
   aspect-ratio: 3 / 4;
@@ -49,18 +49,18 @@
   cursor: pointer;
 }
 
-.members-card__image {
+.member-card__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-normal);
 }
 
-.members-card:hover .members-card__image {
+.member-card:hover .member-card__image {
   transform: scale(1.05);
 }
 
-.members-card__overlay {
+.member-card__overlay {
   position: absolute;
   inset: 0;
   padding: 24px;
@@ -76,17 +76,17 @@
   transition: opacity var(--transition-normal);
 }
 
-.members-card:hover .members-card__overlay {
+.member-card:hover .member-card__overlay {
   opacity: 1;
 }
 
-.members-card__name {
+.member-card__name {
   color: var(--color-font);
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-.members-card__role {
+.member-card__role {
   margin-top: 4px;
   color: var(--color-font);
   font-size: 0.9rem;
@@ -99,7 +99,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .members-card {
+  .member-card {
     width: calc((100% - 24px) / 2);
   }
 }
@@ -118,19 +118,19 @@
     gap: 12px;
   }
 
-  .members-card {
+  .member-card {
     width: calc((100% - 12px) / 2);
   }
 
-  .members-card__overlay {
+  .member-card__overlay {
     padding: 16px;
   }
 
-  .members-card__name {
+  .member-card__name {
     font-size: 1rem;
   }
 
-  .members-card__role {
+  .member-card__role {
     font-size: 0.75rem;
   }
 }
