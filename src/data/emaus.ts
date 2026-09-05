@@ -15,9 +15,9 @@ export const emaus = {
     title: "Emaús",
     text: "Texto de apresentação da Rede Emaús.",
     images: [
-      "/imgs/emaus/about/1.jpg",
-      "/imgs/emaus/about/2.jpg",
-      "/imgs/emaus/about/3.jpg",
+      "/imgs/emaus/about/1.jpeg",
+      "/imgs/emaus/about/2.jpeg",
+      "/imgs/emaus/about/3.jpeg",
     ],
   },
 };
