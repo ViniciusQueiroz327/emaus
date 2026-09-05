@@ -7,6 +7,12 @@ export interface Member {
 
 export const members = [
   {
+    name: "Larissa (Lari)",
+    role: "Membro",
+    image: "/imgs/kadosh/members/Lari.jpeg",
+    position: "center",
+  },
+  {
     name: "Giovanna (Gio)",
     role: "Membro",
     image: "/imgs/kadosh/members/Gio.jpeg",
